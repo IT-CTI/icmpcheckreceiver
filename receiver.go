@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"net"
 	"time"
+	"runtime"
 
 	probing "github.com/prometheus-community/pro-bing"
 	"go.opentelemetry.io/collector/pdata/pcommon"
