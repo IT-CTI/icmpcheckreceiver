@@ -4,7 +4,7 @@ import (
 	"context"
 	"errors"
 
-	"github.com/thmshmm/icmpcheckreceiver/internal/metadata"
+	"github.com/thmshmm/IT_CTI/internal/metadata"
 	"go.opentelemetry.io/collector/component"
 	"go.opentelemetry.io/collector/consumer"
 	"go.opentelemetry.io/collector/receiver"
