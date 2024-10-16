@@ -127,6 +127,11 @@ func appendStatsDataPoint(metricDataPoints pmetric.NumberDataPointSlice, value f
 
 func ping(target Target) (*pingResult, error) {
 	pinger, err := probing.NewPinger(target.Target)
+	
+	if runtime.GOOS == "windows" {
+          pinger.SetPrivileged(true)
+        }
+	
 	if err != nil {
 		return &pingResult{}, fmt.Errorf("failed to create pinger: %w", err)
 	}
