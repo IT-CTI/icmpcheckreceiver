@@ -1,4 +1,4 @@
-module github.com/thmshmm/icmpcheckreceiver
+module github.com/IT-CTI/icmpcheckreceiver
 
 go 1.23.0
 
